@@ -12,14 +12,14 @@ app.get("/", async (c) => {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Form Action</title>
+        <title>HTML Form Action Demo</title>
       </head>
       <body>
         <ul>
           ${DATABASE.map((item) => `<li>${item}</li>`).join("")}
         </ul>
         <form action="/add" method="post">
-          <input type="text" name="item" placeholder="Enter soemthing">
+          <input type="text" name="item" placeholder="Enter something">
           <button type="submit">Submit</button>
         </form>
         <script>
